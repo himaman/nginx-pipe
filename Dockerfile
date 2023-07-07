@@ -8,7 +8,7 @@ RUN apt-get -y update && apt-get -y install nginx
 COPY default /etc/nginx/sites-available/default
 
 # Expose the port for access
-EXPOSE 80/tcp
+EXPOSE 80
 
 # Run the Nginx server
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
